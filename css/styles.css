@@ -2,22 +2,34 @@
     background-color: #ff4c68;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.5;
     text-shadow: 1px 1px #15202b;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .container-fluid {
     padding: 3% 15%;
 }
 
-.btn {
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
@@ -26,6 +38,104 @@ h1 {
     text-shadow: 1px 1px #15202b;
 }
 
+.nav-item {
+    padding: 0 18px;
+}
+
 .nav-link {
     font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Download Buttons */
+
+.btn {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+
+.rotated-img {
+    width: 70%;
+    transform: rotate(22deg);
+}
+
+/* Features Section */
+
+#features {
+    /* background-color: rgb(72, 255, 0); */
+    /* Apply Padding 7% TOP/BOTTOM, and 15% LEFT/RIGHT */
+}
+
+#feature-box {
+    padding: 3%;
+}
+
+#feat-img {
+    color: #ef8172;
+    font-size: 3.6rem;
+    padding: 1rem;
+    transition: 0.4s;
+}
+
+#feat-img:hover {
+    color: #ff4c68;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.features-text {
+    color: #8f8f8f;
+    font-weight: 400;
+    width: auto;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+    background-color: #ef8172;
+    text-align: center;
+    color: #ffffff;
+}
+
+#test-loc {
+    font-size: 1.5rem;
+}
+
+.testimonial-image {
+    width: 15%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    /* Use to adjust size of icons */
+    width: 2rem;
+    height: 2rem;
+}
+/* Press Logos */
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-images {
+    width: 15%;
+    margin: 20px 20px 50px;
+    filter: grayscale(100%) brightness(500%);
 }
