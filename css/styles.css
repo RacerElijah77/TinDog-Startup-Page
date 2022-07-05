@@ -1,12 +1,26 @@
-#title {
-    background-color: #ff4c68;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#title {
+    background-color: #ff4c68;
+    text-align: left;
+}
+
+/* Headings */
+
+.big-heading {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 900;
@@ -15,9 +29,7 @@ h1 {
     text-shadow: 1px 1px #15202b;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
@@ -90,22 +102,20 @@ h2 {
     color: #ff4c68;
 }
 
-h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
 .features-text {
     color: #8f8f8f;
     font-weight: 400;
     width: auto;
 }
 
+.feature-title {
+    font-size: 1.5rem;
+}
+
 /* Testimonials Section */
 
 #testimonials {
     background-color: #ef8172;
-    text-align: center;
     color: #ffffff;
     z-index: 1;
     position: relative;
@@ -119,6 +129,11 @@ h3 {
     width: 15%;
     border-radius: 100%;
     margin: 20px;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .carousel-item {
@@ -135,7 +150,6 @@ h3 {
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -149,34 +163,27 @@ h3 {
 
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-column {
     padding: 3% 2%;
 }
 
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
 /* Call to Action Portion */
 #cta {
     background-color: #ff4c68;
-    text-align: center;
     padding: 7%;
-}
-
-.ending-cta {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 1.5;
-    padding-bottom: 4.5%;
 }
 
 /* Footer */
 
 #footer {
     background-color: white;
-    text-align: center;
     padding: 7%;
 }
 
@@ -195,6 +202,10 @@ h3 {
 .social-ico:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.btn2 {
+    margin-top: 2%;
 }
 
 /* Media Query of the title page on mobile devices */
