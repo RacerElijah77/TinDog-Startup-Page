@@ -23,7 +23,8 @@ h2 {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    /* Order of padding, 3% TOP, 15% Left AND Right; 10% BOTTOM */
+    padding: 3% 15% 10%;
 }
 
 /* Navigation Bar */
@@ -54,22 +55,24 @@ h2 {
         border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-download-button {
-    margin: 5% 3% 5% 0;
+.download-button1 {
+    margin-right: 2%;
 }
-
 /* Title Image */
 
 .rotated-img {
     width: 70%;
     transform: rotate(22deg);
+    position: absolute;
+    left: 90px;
 }
 
 /* Features Section */
 
 #features {
-    /* background-color: rgb(72, 255, 0); */
-    /* Apply Padding 7% TOP/BOTTOM, and 15% LEFT/RIGHT */
+    background-color: #ffffff;
+    z-index: 1;
+    position: relative;
 }
 
 #feature-box {
@@ -104,6 +107,8 @@ h3 {
     background-color: #ef8172;
     text-align: center;
     color: #ffffff;
+    z-index: 1;
+    position: relative;
 }
 
 #test-loc {
@@ -138,4 +143,71 @@ h3 {
     width: 15%;
     margin: 20px 20px 50px;
     filter: grayscale(100%) brightness(500%);
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* Call to Action Portion */
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7%;
+}
+
+.ending-cta {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-bottom: 4.5%;
+}
+
+/* Footer */
+
+#footer {
+    background-color: white;
+    text-align: center;
+    padding: 7%;
+}
+
+.copyright {
+    color: #8f8f8f;
+    font-size: 1.15rem;
+    padding-top: 1.2rem;
+}
+
+.social-ico {
+    color: #15202b;
+    font-size: 22px;
+    margin: 14px;
+}
+
+.social-ico:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Media Query of the title page on mobile devices */
+@media (max-width: 992px) {
+    .rotated-img {
+        /* Allow the position of the phone image to be back into the flow of the HTML
+        page (static positioning!) */
+        position: static;
+        transform: rotate(0);
+        margin-top: 50px;
+    }
+
+    #title {
+        text-align: center;
+    }
 }
